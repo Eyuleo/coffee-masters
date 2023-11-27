@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #eff0f0;
+}
+img {
+	max-width: 100%;
+	display: block;
+	width: 3rem;
+}
+hr {
+	border: none;
+	border-top: 1px solid #83512375;
+}
+.nav-bar {
+	background-color: #43281c;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo-title {
+	color: #fbf2c0;
+	font-size: 0.8rem;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.items-container {
+	margin-top: 2rem;
+	background-color: #eee1d5;
+	padding: 1.5rem 1rem;
+	border-radius: 5px;
+	border: 1px solid #ddb288;
+	box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.123);
+}
+.item-price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+.item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.item > h4 {
+	font-size: 0.925rem;
+	font-weight: 300;
+	color: #616552;
+}
+.flavor > h4 {
+	color: #3d3f35;
+	font-weight: 500;
+}
+.price > p {
+	color: #3d3f35;
+}
+.accent {
+	color: #835223;
+	font-weight: 300;
+	font-size: 0.925rem;
+}
+.order-checkout {
+	margin-top: 2rem;
+	padding: 1.5rem 1rem;
+	border-radius: 5px;
+	background-color: #eee1d5;
+	position: relative;
+	border: 1px solid #ddb288;
+	box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.123);
+}
+.order-checkout > h3 {
+	text-align: right;
+}
+.input-box {
+	padding: 0.7rem 0.6rem;
+	border-radius: 20px;
+	border: 1.5px solid #43281c;
+	width: 100%;
+	background-color: #eee1d5;
+}
+.input-box:focus {
+	outline-color: #43281c;
+}
+.input-label {
+	background-color: #eee1d5;
+	color: #43281c;
+	position: absolute;
+	left: 30px;
+	top: 32px;
+	padding: 0 0.125rem;
+	font-size: 0.925rem;
+}
+
+.payment > h3 {
+	text-align: right;
+}
+.ccv-number-container {
+	position: relative;
+	margin: 1rem 0;
+}
+.ccv-label {
+	position: absolute;
+	left: 20px;
+	top: -10px;
+	padding: 0 0.125rem;
+	background-color: #eee1d5;
+	color: #43281c;
+	font-size: 0.925rem;
+}
+.total-price-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+	margin: 2rem;
+	color: #3d3f35;
+}
+.place-order-btn {
+	width: 100%;
+	padding: 0.5rem 0;
+	margin-bottom: 1rem;
+	border: none;
+	background-color: #deb993;
+	font-size: 1rem;
+	color: #3f462e;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.place-order-btn:hover {
+	background-color: #ddb288;
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		grid-template-areas: 'card-number' 'ccv-number';
+	}
+	.name-of-order {
+		align-self: flex-start;
+	}
+	.payment {
+		margin-top: 0;
+	}
+}
